@@ -87,15 +87,9 @@ N 920 -120 1150 -120 {
 lab=Vout2}
 N 1150 -120 1150 -100 {
 lab=Vout2}
-N 780 -370 780 -350 {
-lab=V}
 N 760 -30 760 -0 {
 lab=GND}
 N 320 100 510 100 {
-lab=V}
-N 320 -370 320 100 {
-lab=V}
-N 320 -370 780 -370 {
 lab=V}
 N 510 180 1010 180 {
 lab=GND}
@@ -137,12 +131,42 @@ N 680 -350 780 -350 {
 lab=V}
 N 630 0 760 -0 {
 lab=GND}
-N 780 -390 780 -370 {
-lab=V}
 N 940 -0 1010 -0 {
 lab=GND}
 N 390 50 690 50 {
 lab=#net1}
+N 770 -500 770 -470 {
+lab=V}
+N 770 -500 780 -500 {
+lab=V}
+N 770 -470 790 -470 {
+lab=V}
+N 790 -470 790 -440 {
+lab=V}
+N 770 -440 790 -440 {
+lab=V}
+N 770 -410 770 -350 {
+lab=V}
+N 320 -440 730 -440 {
+lab=#net1}
+N 320 -440 320 -360 {
+lab=#net1}
+N 80 100 320 100 {
+lab=V}
+N 80 -540 80 100 {
+lab=V}
+N 80 -540 750 -540 {
+lab=V}
+N 750 -540 750 -480 {
+lab=V}
+N 320 -360 320 50 {
+lab=#net1}
+N 320 50 390 50 {
+lab=#net1}
+N 750 -480 770 -480 {
+lab=V}
+N 770 -440 770 -410 {
+lab=V}
 C {/foss/pdks/gf180mcuC/libs.tech/xschem/symbols/pfet_03v3.sym} 650 -320 0 1 {name=M1
 L=0.28u
 W=2u
@@ -255,7 +279,7 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {devices/iopin.sym} 780 -390 0 0 {name=p1 lab=V
+C {devices/iopin.sym} 780 -500 0 0 {name=p1 lab=V
 W=2u}
 C {devices/iopin.sym} 430 -120 0 1 {name=p2 lab=Vout1}
 C {devices/iopin.sym} 590 -210 0 1 {name=p3 lab=Vin1}

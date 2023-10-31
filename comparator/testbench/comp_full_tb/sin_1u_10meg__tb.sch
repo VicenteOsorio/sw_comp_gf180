@@ -27,7 +27,7 @@ N 160 -340 160 -330 {
 lab=Vin1}
 N 360 -550 360 -530 {
 lab=Vindiff}
-C {devices/vsource.sym} 160 -300 0 0 {name=V1 value="SIN(1.6 10u  10meg)"}
+C {devices/vsource.sym} 160 -300 0 0 {name=V1 value="SIN(1.6 .1u  10meg)"}
 C {devices/vsource.sym} 240 -300 0 0 {name=V2 value=1.6}
 C {devices/vsource.sym} 310 -300 0 0 {name=V3 value="PULSE(0 3 0 100p 100p 5n 10n)"}
 C {devices/gnd.sym} 640 -380 0 0 {name=l1 lab=GND}
@@ -65,7 +65,9 @@ C {devices/code_shown.sym} 70 -760 0 0 {name=SPICE1 only_toplevel=false value="
 .control
 save all
 tran 500p 500n  
-plot \{vindiff * 100000\} outcomp \{clk/3.3\}
+$plot \{vindiff * 100000\} outcomp \{clk/3.3\}
+plot vindiff 
+plot outcomp
 .endc"}
 C {devices/code.sym} 60 -560 0 0 {name=TT_MODELS 
 only_toplevel=true 

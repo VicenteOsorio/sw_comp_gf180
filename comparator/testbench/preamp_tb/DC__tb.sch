@@ -35,7 +35,21 @@ N 210 -330 250 -330 {
 lab=Vdif}
 N 310 -330 360 -330 {
 lab=Vdiff}
-C {devices/vsource.sym} 150 -140 0 0 {name=V1 value="SIN(0 .01 .2meg)"}
+N 850 60 900 60 {
+lab=Vout2}
+N 850 -100 850 60 {
+lab=Vout2}
+N 920 -210 920 -140 {
+lab=Vout1}
+N 920 -210 1090 -210 {
+lab=Vout1}
+N 1090 -210 1090 -40 {
+lab=Vout1}
+N 900 -40 1090 -40 {
+lab=Vout1}
+N 900 -40 900 -0 {
+lab=Vout1}
+C {devices/vsource.sym} 150 -140 0 0 {name=V1 value=.1u}
 C {devices/vsource.sym} 150 -30 0 0 {name=V2 value=1.5}
 C {devices/vsource.sym} 300 -140 0 0 {name=V3 value="PULSE(0 3 0 100p 100p 5n 10n)"}
 C {devices/gnd.sym} 750 -40 0 0 {name=l1 lab=GND}
@@ -58,8 +72,9 @@ C {devices/lab_wire.sym} 750 -210 0 0 {name=p8 sig_type=std_logic lab=V
 C {devices/code_shown.sym} 480 -390 0 0 {name=SPICE1 only_toplevel=false value="
 .control
 save all
-tran 500p 20u  
-plot vdiff vcm vout
+tran 500p 50n  
+plot vdiff   vout
+plot vout1 clk
 .endc"}
 C {devices/code.sym} 50 -400 0 0 {name=TT_MODELS 
 only_toplevel=true 
@@ -82,3 +97,5 @@ C {devices/lab_wire.sym} 210 -290 0 0 {name=p11 sig_type=std_logic lab=Vcm}
 C {symbols/Vdiffmeter.sym} 940 -80 0 0 {name=X4}
 C {symbols/preamp.sym} 680 -60 0 0 {name=X3}
 C {symbols/Vdiffmeter.sym} 250 -270 0 0 {name=X1}
+C {symbols/strongarm.sym} 910 100 0 0 {name=X2}
+C {devices/gnd.sym} 950 110 0 0 {name=l2 lab=GND}

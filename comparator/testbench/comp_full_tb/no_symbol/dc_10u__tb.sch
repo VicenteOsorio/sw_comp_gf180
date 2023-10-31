@@ -145,6 +145,7 @@ tran 50p 1u
 plot \{vindiff * 100000\} \{voutpreamp * 100\} clk
 plot \{vindiff * 100000\} outcomp clk
 plot \{voutpreamp * 100\} voutcomp clk
+plot \{voutpreamp / (10u) \} \{1000* clk\}
 
 .endc"}
 C {devices/code.sym} -510 -560 0 0 {name=TT_MODELS 
@@ -169,7 +170,7 @@ C {devices/lab_wire.sym} 680 -290 0 0 {name=p19 sig_type=std_logic lab=Vout1prea
 C {devices/lab_wire.sym} 680 -190 0 0 {name=p20 sig_type=std_logic lab=Vout2preamp}
 C {devices/lab_wire.sym} 1050 -290 0 0 {name=p21 sig_type=std_logic lab=Vout1comp}
 C {devices/lab_wire.sym} 1050 -220 0 0 {name=p22 sig_type=std_logic lab=Vout2comp}
-C {devices/vsource.sym} -380 -120 0 0 {name=V1 value=10u}
+C {devices/vsource.sym} -380 -120 0 0 {name=V1 value=1u}
 C {devices/vsource.sym} -300 -120 0 0 {name=V2 value=1.6}
 C {devices/vsource.sym} -230 -120 0 0 {name=V3 value="PULSE(0 3 0 10p 10p 5n 10n)"}
 C {devices/gnd.sym} -300 -90 0 0 {name=l3 lab=GND}

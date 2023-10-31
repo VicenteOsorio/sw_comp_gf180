@@ -119,7 +119,7 @@ N 580 -270 690 -270 {
 lab=GND}
 C {/foss/pdks/gf180mcuC/libs.tech/xschem/symbols/nfet_03v3.sym} 670 -350 0 1 {name=M26
 L=.28u
-W=10u
+W=4u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -133,7 +133,7 @@ spiceprefix=X
 }
 C {/foss/pdks/gf180mcuC/libs.tech/xschem/symbols/nfet_03v3.sym} 420 -350 0 0 {name=M27
 L=.28u
-W=10u
+W=4u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -147,7 +147,7 @@ spiceprefix=X
 }
 C {/foss/pdks/gf180mcuC/libs.tech/xschem/symbols/nfet_03v3.sym} 520 -190 0 0 {name=M28
 L=.28u
-W=1u
+W=.22u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"

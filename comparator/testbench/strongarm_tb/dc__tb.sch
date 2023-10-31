@@ -35,7 +35,7 @@ N 810 -160 810 -140 {
 lab=#net1}
 N 810 -140 840 -140 {
 lab=#net1}
-C {devices/vsource.sym} 150 -140 0 0 {name=V1 value="SIN(0 .01u 20meg)"}
+C {devices/vsource.sym} 150 -140 0 0 {name=V1 value=1u}
 C {devices/vsource.sym} 230 -140 0 0 {name=V2 value=1.6}
 C {devices/vsource.sym} 300 -140 0 0 {name=V3 value="PULSE(0 3 0 100p 100p 7n 15n)"}
 C {devices/gnd.sym} 750 -60 0 0 {name=l1 lab=GND}
