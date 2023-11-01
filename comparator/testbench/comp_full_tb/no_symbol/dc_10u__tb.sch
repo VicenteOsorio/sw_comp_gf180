@@ -140,7 +140,7 @@ C {devices/lab_wire.sym} 1660 -280 0 0 {name=p18 sig_type=std_logic lab=outcomp
 C {devices/code_shown.sym} 70 -640 0 0 {name=SPICE1 only_toplevel=false value="
 .control
 save all
-tran 50p 1u
+tran 50p 50n
 
 plot \{vindiff * 100000\} \{voutpreamp * 100\} clk
 plot \{vindiff * 100000\} outcomp clk

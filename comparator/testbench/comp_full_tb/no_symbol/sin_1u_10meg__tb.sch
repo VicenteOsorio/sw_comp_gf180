@@ -169,7 +169,7 @@ C {devices/lab_wire.sym} 680 -290 0 0 {name=p19 sig_type=std_logic lab=Vout1prea
 C {devices/lab_wire.sym} 680 -190 0 0 {name=p20 sig_type=std_logic lab=Vout2preamp}
 C {devices/lab_wire.sym} 1050 -290 0 0 {name=p21 sig_type=std_logic lab=Vout1comp}
 C {devices/lab_wire.sym} 1050 -220 0 0 {name=p22 sig_type=std_logic lab=Vout2comp}
-C {devices/vsource.sym} -380 -120 0 0 {name=V1 value="SIN(1.6 .01u  7.81meg)"}
+C {devices/vsource.sym} -380 -120 0 0 {name=V1 value="SIN(1.6 .1u  7.81meg)"}
 C {devices/vsource.sym} -300 -120 0 0 {name=V2 value=1.6}
 C {devices/vsource.sym} -230 -120 0 0 {name=V3 value="PULSE(0 3 0 10p 10p 5n 10n)"}
 C {devices/gnd.sym} -380 -90 0 0 {name=l2 lab=GND}

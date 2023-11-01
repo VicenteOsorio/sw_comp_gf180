@@ -62,19 +62,19 @@ lab=Vout2}
 N 1900 -600 1900 -540 {
 lab=#net2}
 N 1840 -660 1910 -660 {
-lab=#net3}
+lab=V}
 N 1610 -430 1610 -420 {
 lab=Vout1}
 N 1610 -600 1610 -550 {
-lab=#net4}
+lab=#net3}
 N 1600 -630 1610 -630 {
-lab=#net3}
+lab=V}
 N 1600 -660 1600 -630 {
-lab=#net3}
+lab=V}
 N 1900 -630 1910 -630 {
-lab=#net3}
+lab=V}
 N 1910 -660 1910 -630 {
-lab=#net3}
+lab=V}
 N 1650 -630 1680 -630 {
 lab=Vout2}
 N 1650 -390 1680 -390 {
@@ -82,17 +82,17 @@ lab=Vout2}
 N 1680 -470 1680 -390 {
 lab=Vout2}
 N 1610 -520 1660 -520 {
-lab=#net3}
+lab=V}
 N 1660 -660 1660 -520 {
-lab=#net3}
+lab=V}
 N 1820 -430 1820 -390 {
 lab=Vout1}
 N 1820 -390 1860 -390 {
 lab=Vout1}
 N 1840 -510 1900 -510 {
-lab=#net3}
+lab=V}
 N 1840 -660 1840 -510 {
-lab=#net3}
+lab=V}
 N 1820 -630 1860 -630 {
 lab=Vout1}
 N 1680 -470 1900 -470 {
@@ -132,9 +132,9 @@ lab=GND}
 N 1900 -310 1920 -310 {
 lab=GND}
 N 1600 -660 1660 -660 {
-lab=#net3}
+lab=V}
 N 1760 -660 1840 -660 {
-lab=#net3}
+lab=V}
 N 1680 -630 1680 -470 {
 lab=Vout2}
 N 1900 -480 1900 -470 {
@@ -146,7 +146,7 @@ lab=Vout1}
 N 1900 -470 1900 -430 {
 lab=Vout2}
 N 1660 -660 1760 -660 {
-lab=#net3}
+lab=V}
 N 1610 -310 1740 -310 {
 lab=GND}
 N 1920 -310 1990 -310 {
@@ -154,17 +154,17 @@ lab=GND}
 N 1370 -260 1670 -260 {
 lab=#net1}
 N 1750 -810 1750 -780 {
-lab=#net3}
+lab=V}
 N 1750 -780 1770 -780 {
-lab=#net3}
+lab=V}
 N 1770 -780 1770 -750 {
-lab=#net3}
+lab=V}
 N 1750 -750 1770 -750 {
-lab=#net3}
+lab=V}
 N 1750 -720 1750 -660 {
-lab=#net3}
+lab=V}
 N 1750 -750 1750 -720 {
-lab=#net3}
+lab=V}
 C {devices/vsource.sym} 150 -140 0 0 {name=V1 value=1u}
 C {devices/vsource.sym} 230 -140 0 0 {name=V2 value=1.6}
 C {devices/vsource.sym} 300 -140 0 0 {name=V3 value="PULSE(0 3 0 100p 100p 7n 15n)"}
@@ -308,7 +308,7 @@ model=pfet_03v3
 spiceprefix=X
 }
 C {/foss/pdks/gf180mcuC/libs.tech/xschem/symbols/pfet_03v3.sym} 1590 -520 0 0 {name=M7
-L=0.28u
+L=.28u
 W=10u
 nf=1
 m=1
@@ -322,7 +322,7 @@ model=pfet_03v3
 spiceprefix=X
 }
 C {/foss/pdks/gf180mcuC/libs.tech/xschem/symbols/pfet_03v3.sym} 1920 -510 0 1 {name=M8
-L=0.28u
+L=.28u
 W=10u
 nf=1
 m=1

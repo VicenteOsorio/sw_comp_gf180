@@ -72,9 +72,9 @@ C {devices/lab_wire.sym} 750 -210 0 0 {name=p8 sig_type=std_logic lab=V
 C {devices/code_shown.sym} 480 -390 0 0 {name=SPICE1 only_toplevel=false value="
 .control
 save all
-tran 500p 50n  
-plot vdiff   vout
-plot vout1 clk
+tran 500p 500n  
+plot vdiff   vout clk/10
+$plot vout1 clk
 .endc"}
 C {devices/code.sym} 50 -400 0 0 {name=TT_MODELS 
 only_toplevel=true 
@@ -99,3 +99,7 @@ C {symbols/preamp.sym} 680 -60 0 0 {name=X3}
 C {symbols/Vdiffmeter.sym} 250 -270 0 0 {name=X1}
 C {symbols/strongarm.sym} 910 100 0 0 {name=X2}
 C {devices/gnd.sym} 950 110 0 0 {name=l2 lab=GND}
+C {devices/lab_wire.sym} 950 -30 0 0 {name=p14 sig_type=std_logic lab=V
+}
+C {devices/lab_wire.sym} 900 80 0 0 {name=p16 sig_type=std_logic lab=clk
+}
