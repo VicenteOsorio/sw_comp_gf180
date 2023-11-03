@@ -69,7 +69,7 @@ C {devices/gnd.sym} 360 -470 0 0 {name=l8 lab=GND}
 C {devices/code_shown.sym} 190 -700 0 0 {name=SPICE1 only_toplevel=false value="
 .control
 save all
-tran 500p 4u  
+tran 5p 4u  
 plot vindiff outcomp
 plot vin1 vin2 outcomp
 .endc"}

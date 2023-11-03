@@ -160,11 +160,3 @@ C {devices/iopin.sym} 160 -260 0 1 {name=p5 lab=A}
 C {devices/iopin.sym} 660 -260 0 0 {name=p7 lab=B}
 C {devices/iopin.sym} 450 -310 0 0 {name=p9 lab=V}
 C {devices/iopin.sym} 410 -80 0 0 {name=p10 lab=Z}
-C {devices/code.sym} 780 -230 0 0 {name=TT_MODELS 
-only_toplevel=true 
-format="tcleval(  @value  )"
-value="
-.include /foss/pdks/gf180mcuC/libs.tech/ngspice/design.ngspice
-.lib /foss/pdks/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
-"
-spice_ignore=false}

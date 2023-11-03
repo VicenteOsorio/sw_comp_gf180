@@ -187,14 +187,6 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {devices/code.sym} 1170 -750 0 0 {name=TT_MODELS 
-only_toplevel=true 
-format="tcleval(  @value  )"
-value="
-.include /foss/pdks/gf180mcuC/libs.tech/ngspice/design.ngspice
-.lib /foss/pdks/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
-"
-spice_ignore=false}
 C {devices/iopin.sym} 640 -630 0 0 {name=p1 lab=V
 W=3u}
 C {devices/iopin.sym} 270 -170 0 0 {name=p2 lab=GND

@@ -89,14 +89,6 @@ C {devices/iopin.sym} 4090 -3480 0 1 {name=p7 lab=Vinp}
 C {devices/iopin.sym} 4090 -3430 0 1 {name=p8 lab=Vinn}
 C {devices/iopin.sym} 4090 -3340 0 0 {name=p9 lab=clk}
 C {devices/iopin.sym} 5410 -3480 0 0 {name=p3 lab=OUT}
-C {devices/code.sym} 4060 -3650 0 0 {name=TT_MODELS 
-only_toplevel=true 
-format="tcleval(  @value  )"
-value="
-.include /foss/pdks/gf180mcuC/libs.tech/ngspice/design.ngspice
-.lib /foss/pdks/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
-"
-spice_ignore=false}
 C {symbols/SR_nor.sym} 5290 -3400 0 0 {name=X1}
 C {symbols/inv.sym} 4910 -3480 0 0 {name=x2 cl=0.28u wp=0.44u wn=0.22u}
 C {symbols/inv.sym} 4750 -3480 0 0 {name=x3 cl=0.28u wp=0.44u wn=0.22u}

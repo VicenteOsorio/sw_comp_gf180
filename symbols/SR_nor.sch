@@ -71,13 +71,5 @@ C {devices/iopin.sym} 100 -190 0 1 {name=p3 lab=S}
 C {devices/iopin.sym} 130 -40 0 1 {name=p4 lab=R}
 C {devices/iopin.sym} 350 -180 0 0 {name=p5 lab=Qn}
 C {devices/iopin.sym} 370 -40 0 0 {name=p6 lab=Q}
-C {devices/code.sym} 450 -180 0 0 {name=TT_MODELS 
-only_toplevel=true 
-format="tcleval(  @value  )"
-value="
-.include /foss/pdks/gf180mcuC/libs.tech/ngspice/design.ngspice
-.lib /foss/pdks/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
-"
-spice_ignore=false}
 C {symbols/norgate.sym} 160 -140 0 0 {name=X1}
 C {symbols/norgate.sym} 170 -40 0 0 {name=X2}

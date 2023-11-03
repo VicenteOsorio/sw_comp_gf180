@@ -27,7 +27,7 @@ N 160 -340 160 -330 {
 lab=Vin1}
 N 360 -550 360 -530 {
 lab=Vindiff}
-C {devices/vsource.sym} 160 -300 0 0 {name=V1 value="SIN(1.6 .1u  10meg)"}
+C {devices/vsource.sym} 160 -300 0 0 {name=V1 value="SIN(1.6 .1u  7.81meg)"}
 C {devices/vsource.sym} 240 -300 0 0 {name=V2 value=1.6}
 C {devices/vsource.sym} 310 -300 0 0 {name=V3 value="PULSE(0 3 0 100p 100p 5n 10n)"}
 C {devices/gnd.sym} 640 -380 0 0 {name=l1 lab=GND}
@@ -55,17 +55,11 @@ C {devices/lab_wire.sym} 360 -550 0 0 {name=p11 sig_type=std_logic lab=Vindiff
 }
 C {devices/lab_wire.sym} 720 -450 0 0 {name=p12 sig_type=std_logic lab=outcomp
 }
-C {devices/res.sym} 360 -500 0 0 {name=R1
-value=100k
-footprint=1206
-device=resistor
-m=2}
-C {devices/gnd.sym} 360 -470 0 0 {name=l8 lab=GND}
 C {devices/code_shown.sym} 70 -760 0 0 {name=SPICE1 only_toplevel=false value="
 .control
 save all
-tran 500p 500n  
-$plot \{vindiff * 100000\} outcomp \{clk/3.3\}
+tran 50p 500n  
+plot \{vindiff * 10000000\} outcomp \{clk/3.3\}
 plot vindiff 
 plot outcomp
 .endc"}
@@ -77,5 +71,19 @@ value="
 .lib /foss/pdks/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
 "
 spice_ignore=false}
-C {symbols/Preamp-Strong-Latch.sym} 580 -400 0 0 {name=X1}
 C {symbols/Vdiffmeter.sym} 260 -470 0 0 {name=X2}
+C {symbols/Preamp-Strong-Latch.sym} 580 -400 0 0 {name=X1}
+C {/foss/pdks/gf180mcuC/libs.tech/xschem/symbols/nfet_06v0_nvt.sym} 790 -590 0 0 {name=M1
+L=1.80u
+W=0.80u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=nfet_06v0
+spiceprefix=X
+}

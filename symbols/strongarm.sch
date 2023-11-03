@@ -287,14 +287,6 @@ C {devices/iopin.sym} 960 -200 0 0 {name=p4 lab=Vin2}
 C {devices/iopin.sym} 1150 -120 0 0 {name=p5 lab=Vout2}
 C {devices/iopin.sym} 400 140 0 1 {name=p6 lab=CLK
 }
-C {devices/code.sym} 1360 -150 0 0 {name=TT_MODELS 
-only_toplevel=true 
-format="tcleval(  @value  )"
-value="
-.include /foss/pdks/gf180mcuC/libs.tech/ngspice/design.ngspice
-.lib /foss/pdks/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
-"
-spice_ignore=false}
 C {devices/iopin.sym} 760 -30 0 0 {name=p7 lab=GND
 }
 C {symbols/inv.sym} 510 140 0 0 {name=x1 cl=0.28u wp=0.44u wn=0.22u}
