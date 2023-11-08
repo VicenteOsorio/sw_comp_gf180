@@ -73,17 +73,3 @@ value="
 spice_ignore=false}
 C {symbols/Vdiffmeter.sym} 260 -470 0 0 {name=X2}
 C {symbols/Preamp-Strong-Latch.sym} 580 -400 0 0 {name=X1}
-C {/foss/pdks/gf180mcuC/libs.tech/xschem/symbols/nfet_06v0_nvt.sym} 790 -590 0 0 {name=M1
-L=1.80u
-W=0.80u
-nf=1
-m=1
-ad="'int((nf+1)/2) * W/nf * 0.18u'"
-pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
-as="'int((nf+2)/2) * W/nf * 0.18u'"
-ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
-nrd="'0.18u / W'" nrs="'0.18u / W'"
-sa=0 sb=0 sd=0
-model=nfet_06v0
-spiceprefix=X
-}
