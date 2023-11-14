@@ -52,8 +52,6 @@ N 1020 -150 1100 -150 {
 lab=V}
 N 1020 -180 1020 -150 {
 lab=V}
-N 1010 70 1010 170 {
-lab=#net1}
 N 1010 40 1120 40 {
 lab=GND}
 N 1160 40 1250 40 {
@@ -75,23 +73,17 @@ lab=V}
 N 930 -180 1010 -180 {
 lab=V}
 N 950 200 970 200 {
-lab=#net2}
+lab=Vgate}
 N 1110 -240 1110 -210 {
 lab=V}
 N 1070 -210 1110 -210 {
 lab=V}
 N 1070 -210 1070 -180 {
 lab=V}
-N 1160 110 1160 260 {
-lab=GND}
 N 1070 260 1160 260 {
 lab=GND}
 N 820 20 820 40 {
 lab=Vcm}
-N 1050 40 1050 120 {
-lab=GND}
-N 1050 120 1160 120 {
-lab=GND}
 N 340 70 380 70 {
 lab=Vout1}
 N 380 70 380 80 {
@@ -108,9 +100,53 @@ N 890 -110 920 -110 {
 lab=Vout1}
 N 950 260 1010 260 {
 lab=GND}
+N 890 160 930 160 {
+lab=Vgate}
+N 890 260 950 260 {
+lab=GND}
+N 1100 40 1100 120 {
+lab=GND}
+N 1100 120 1160 120 {
+lab=GND}
+N 740 260 890 260 {
+lab=GND}
+N 740 250 740 260 {
+lab=GND}
+N 710 220 740 220 {
+lab=GND}
+N 710 220 710 260 {
+lab=GND}
+N 710 260 740 260 {
+lab=GND}
+N 780 220 890 220 {
+lab=Vgate}
+N 930 160 930 200 {
+lab=Vgate}
+N 930 200 950 200 {
+lab=Vgate}
+N 740 190 790 190 {
+lab=Vgate}
+N 790 190 790 220 {
+lab=Vgate}
+N 760 -180 930 -180 {
+lab=V}
+N 760 -180 760 130 {
+lab=V}
+N 740 130 760 130 {
+lab=V}
+N 890 160 890 220 {
+lab=Vgate}
+N 1160 120 1160 260 {
+lab=GND}
+N 1010 70 1010 170 {
+lab=#net1}
+N 1100 -70 1170 -70 {
+lab=Vout2}
+N 830 -60 920 -60 {
+lab=Vout1}
 C {devices/vsource.sym} 150 -30 0 0 {name=V2 value=1.5}
 C {devices/vsource.sym} 300 -140 0 0 {name=V3 value="PULSE(0 3 0 100p 100p 5n 10n)"}
-C {devices/gnd.sym} 1070 260 0 0 {name=l1 lab=GND}
+C {devices/gnd.sym} 930 260 0 0 {name=l1 lab=GND}
 C {devices/gnd.sym} 150 0 0 0 {name=l3 lab=GND}
 C {devices/gnd.sym} 300 -110 0 0 {name=l4 lab=GND}
 C {devices/lab_wire.sym} 150 -180 0 0 {name=p1 sig_type=std_logic lab=Vdif}
@@ -128,9 +164,12 @@ C {devices/lab_wire.sym} 1110 -230 0 0 {name=p8 sig_type=std_logic lab=V
 C {devices/code_shown.sym} 480 -390 0 0 {name=SPICE1 only_toplevel=false value="
 .control
 save all
-tran 500p 500n  
+tran 50p 5u 
 plot vdiff   vout
 plot vout1 clk
+plot comp
+plot \{vout/vdiff\}
+plot vgate
 .endc"}
 C {devices/code.sym} 50 -400 0 0 {name=TT_MODELS 
 only_toplevel=true 
@@ -156,7 +195,7 @@ C {symbols/strongarm.sym} 350 310 0 0 {name=X2}
 C {devices/gnd.sym} 390 320 0 0 {name=l2 lab=GND}
 C {/foss/pdks/gf180mcuC/libs.tech/xschem/symbols/nfet_03v3.sym} 1140 40 0 1 {name=M26
 L=.28u
-W=4u
+W=.22u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -170,7 +209,7 @@ spiceprefix=X
 }
 C {/foss/pdks/gf180mcuC/libs.tech/xschem/symbols/nfet_03v3.sym} 890 40 0 0 {name=M27
 L=.28u
-W=4u
+W=.22u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -184,7 +223,7 @@ spiceprefix=X
 }
 C {/foss/pdks/gf180mcuC/libs.tech/xschem/symbols/nfet_03v3.sym} 990 200 0 0 {name=M28
 L=.28u
-W=.22u
+W=5u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -198,7 +237,7 @@ spiceprefix=X
 }
 C {/foss/pdks/gf180mcuC/libs.tech/xschem/symbols/pfet_03v3.sym} 910 -150 0 0 {name=M24
 L=0.28u
-W=.22u
+W=5u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -212,7 +251,7 @@ spiceprefix=X
 }
 C {/foss/pdks/gf180mcuC/libs.tech/xschem/symbols/pfet_03v3.sym} 1120 -150 0 1 {name=M25
 L=0.28u
-W=.22u
+W=5u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -232,9 +271,38 @@ C {devices/lab_wire.sym} 340 210 0 0 {name=p17 sig_type=std_logic lab=Vout1
 }
 C {devices/lab_wire.sym} 340 270 0 0 {name=p18 sig_type=std_logic lab=Vout2
 }
-C {devices/vsource.sym} 150 -140 0 0 {name=V1 value="SIN(0 1u 10meg)"}
+C {devices/vsource.sym} 150 -140 0 0 {name=V1 value="SIN(0 800u 2meg)"}
 C {devices/lab_wire.sym} 340 290 0 0 {name=p19 sig_type=std_logic lab=clk
 }
 C {devices/lab_wire.sym} 390 180 0 0 {name=p20 sig_type=std_logic lab=V
 }
-C {devices/vsource.sym} 950 230 0 0 {name=V5 value=10m}
+C {devices/lab_wire.sym} 450 220 0 1 {name=p6 sig_type=std_logic lab=comp
+}
+C {devices/isource.sym} 740 160 0 0 {name=I0 value=.1u}
+C {/foss/pdks/gf180mcuC/libs.tech/xschem/symbols/nfet_03v3.sym} 760 220 0 1 {name=M1
+L=.28u
+W=.22u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=nfet_03v3
+spiceprefix=X
+}
+C {devices/lab_wire.sym} 890 160 0 0 {name=p21 sig_type=std_logic lab=Vgate}
+C {devices/capa.sym} 830 -30 0 0 {name=C1
+m=1
+value=200f
+footprint=1206
+device="ceramic capacitor"}
+C {devices/gnd.sym} 830 0 0 0 {name=l6 lab=GND}
+C {devices/capa.sym} 1170 -40 0 0 {name=C2
+m=1
+value=200f
+footprint=1206
+device="ceramic capacitor"}
+C {devices/gnd.sym} 1170 -10 0 0 {name=l8 lab=GND}

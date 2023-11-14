@@ -125,23 +125,9 @@ N 1110 250 1110 280 {
 lab=vo}
 N 1110 340 1110 410 {
 lab=GND}
-N 1260 290 1330 290 {
-lab=cclk}
-N 1260 290 1260 330 {
-lab=cclk}
-N 1260 390 1330 390 {
-lab=GND}
-N 1260 250 1330 250 {
-lab=vo}
-N 1330 250 1330 260 {
-lab=vo}
-N 1110 250 1200 250 {
-lab=vo}
-N 1200 250 1260 250 {
-lab=vo}
 C {/foss/pdks/gf180mcuC/libs.tech/xschem/symbols/nfet_03v3.sym} 1020 180 1 0 {name=M1
 L=0.28u
-W=2u
+W=6u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -246,7 +232,7 @@ C {devices/lab_pin.sym} 540 60 0 0 {name=p6 sig_type=std_logic lab=clk}
 C {devices/gnd.sym} 510 100 0 0 {name=l8 lab=GND}
 C {devices/lab_pin.sym} 1050 -110 0 0 {name=p7 sig_type=std_logic lab=v}
 C {devices/lab_pin.sym} 1110 200 0 0 {name=p9 sig_type=std_logic lab=vo}
-C {devices/code.sym} 1820 -110 0 0 {name=TT_MODELS 
+C {devices/code.sym} 1370 120 0 0 {name=TT_MODELS 
 only_toplevel=true 
 format="tcleval(  @value  )"
 value="
@@ -335,21 +321,20 @@ m=1
 value=1p
 footprint=1206
 device="ceramic capacitor"}
-C {devices/code_shown.sym} 1810 -360 0 0 {name=SPICE only_toplevel=false value="
+C {devices/code_shown.sym} 1360 -130 0 0 {name=SPICE only_toplevel=false value="
 .control
 save all
 tran 50p 5u 3000n  
 
-plot \{vi-vo\}
+plot \{(vi-vo)*1000\} 
 plot vi vo 
+plot vclose
 plot vgate vi
-plot vi comp
-plot \{vo - vm\} comp cclk
 .endc"
 }
 C {devices/lab_pin.sym} 780 240 0 0 {name=p2 sig_type=std_logic lab=clk}
 C {devices/gnd.sym} 780 300 0 0 {name=l2 lab=GND}
-C {devices/vsource.sym} 850 270 0 0 {name=V2 value="sin(1.6 10m 2Meg)"}
+C {devices/vsource.sym} 850 270 0 0 {name=V2 value="sin(1.8 1.4 2Meg)"}
 C {devices/lab_pin.sym} 850 240 0 0 {name=p8 sig_type=std_logic lab=vi}
 C {devices/gnd.sym} 850 300 0 0 {name=l9 lab=GND}
 C {devices/vsource.sym} 710 270 0 0 {name=V3 value=3.3}
@@ -370,12 +355,3 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {symbols/Preamp-Strong-Latch.sym} 1350 340 0 0 {name=X1}
-C {devices/lab_pin.sym} 1410 220 0 0 {name=p4 sig_type=std_logic lab=v}
-C {devices/gnd.sym} 1410 360 0 0 {name=l12 lab=GND}
-C {devices/vsource.sym} 1330 360 0 0 {name=V4 value="PULSE(3 0 0 100p 180n 1n 187.5n)"}
-C {devices/gnd.sym} 1330 390 0 0 {name=l15 lab=GND}
-C {devices/vsource.sym} 1260 360 0 0 {name=V5 value="PULSE(3 0 0 100p 100p 7.81n 15.625n)"}
-C {devices/lab_pin.sym} 1490 290 0 1 {name=p5 sig_type=std_logic lab=comp}
-C {devices/lab_pin.sym} 1330 330 0 0 {name=p18 sig_type=std_logic lab=vm}
-C {devices/lab_pin.sym} 1260 300 0 0 {name=p19 sig_type=std_logic lab=cclk}

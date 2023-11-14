@@ -117,9 +117,11 @@ N 580 -350 580 -270 {
 lab=GND}
 N 580 -270 690 -270 {
 lab=GND}
+N 290 -430 310 -430 {
+lab=GND}
 C {/foss/pdks/gf180mcuC/libs.tech/xschem/symbols/nfet_03v3.sym} 670 -350 0 1 {name=M26
 L=.28u
-W=4u
+W=6u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -133,7 +135,7 @@ spiceprefix=X
 }
 C {/foss/pdks/gf180mcuC/libs.tech/xschem/symbols/nfet_03v3.sym} 420 -350 0 0 {name=M27
 L=.28u
-W=4u
+W=6u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -196,3 +198,13 @@ C {devices/iopin.sym} 450 -460 0 1 {name=p6 lab=Vout1}
 C {devices/iopin.sym} 190 -440 0 1 {name=p3 lab=clk}
 C {devices/iopin.sym} 350 -370 0 1 {name=p7 lab=Vin2}
 C {devices/iopin.sym} 780 -380 0 0 {name=p9 lab=Vin1}
+C {devices/capa.sym} 310 -460 0 0 {name=C1
+m=1
+value=0f
+footprint=1206
+device="ceramic capacitor"}
+C {devices/capa.sym} 770 -450 0 0 {name=C2
+m=1
+value=0f
+footprint=1206
+device="ceramic capacitor"}
