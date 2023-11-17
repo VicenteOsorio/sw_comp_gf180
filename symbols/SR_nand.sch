@@ -215,11 +215,3 @@ C {devices/iopin.sym} 2430 -1800 0 0 {name=p5 lab=Qn
 W=4u}
 C {devices/iopin.sym} 2240 -1800 0 1 {name=p6 lab=Q
 W=4u}
-C {devices/code.sym} 1810 -1830 0 0 {name=TT_MODELS 
-only_toplevel=true 
-format="tcleval(  @value  )"
-value="
-.include /foss/pdks/gf180mcuC/libs.tech/ngspice/design.ngspice
-.lib /foss/pdks/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
-"
-spice_ignore=false}
