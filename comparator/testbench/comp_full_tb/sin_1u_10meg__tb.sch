@@ -72,5 +72,5 @@ value="
 "
 spice_ignore=false}
 C {symbols/Vdiffmeter.sym} 260 -470 0 0 {name=X2}
-C {symbols/Preamp-Strong-Latch.sym} 580 -400 0 0 {name=X1}
+C {../../../symbols/Preamp-Strong-Latch.sym} 580 -400 0 0 {name=X1}
 C {symbols/Preamp-Strong-Latch.sym} 920 -530 0 0 {name=X3}
