@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -60,8 +60,8 @@ setscale a
 plot idn/W
 plot vov2
 
-wrdata /foss/designs/personal/sw_comp_gf180/comparator/dev_charac/data/data_idnW_gmnidn_M1.dat idn/W
-wrdata /foss/designs/personal/sw_comp_gf180/comparator/dev_charac/data/data_vov_gmnidn_M1.dat vov2
+*wrdata /foss/designs/personal/sw_comp_gf180/comparator/dev_charac/data/data_idnW_gmnidn_M1.dat idn/W
+*wrdata /foss/designs/personal/sw_comp_gf180/comparator/dev_charac/data/data_vov_gmnidn_M1.dat vov2
 
 
 .endc

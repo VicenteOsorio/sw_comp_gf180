@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -139,7 +139,7 @@ N 1110 250 1200 250 {
 lab=vo}
 N 1200 250 1260 250 {
 lab=vo}
-C {/foss/pdks/gf180mcuC/libs.tech/xschem/symbols/nfet_03v3.sym} 1020 180 1 0 {name=M1
+C {symbols/nfet_03v3.sym} 1020 180 1 0 {name=M1
 L=0.28u
 W=2u
 nf=1
@@ -153,7 +153,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {/foss/pdks/gf180mcuC/libs.tech/xschem/symbols/pfet_03v3.sym} 760 -90 3 1 {name=M2
+C {symbols/pfet_03v3.sym} 760 -90 3 1 {name=M2
 L=0.28u
 W=1u
 nf=1
@@ -167,7 +167,7 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {/foss/pdks/gf180mcuC/libs.tech/xschem/symbols/nfet_03v3.sym} 880 90 1 0 {name=M3
+C {symbols/nfet_03v3.sym} 880 90 1 0 {name=M3
 L=0.28u
 W=1u
 nf=1
@@ -181,7 +181,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {/foss/pdks/gf180mcuC/libs.tech/xschem/symbols/nfet_03v3.sym} 1050 -90 1 0 {name=M4
+C {symbols/nfet_03v3.sym} 1050 -90 1 0 {name=M4
 L=0.28u
 W=5u
 nf=1
@@ -195,7 +195,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {/foss/pdks/gf180mcuC/libs.tech/xschem/symbols/nfet_03v3.sym} 540 80 1 0 {name=M5
+C {symbols/nfet_03v3.sym} 540 80 1 0 {name=M5
 L=0.28u
 W=3u
 nf=1
@@ -209,7 +209,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {/foss/pdks/gf180mcuC/libs.tech/xschem/symbols/nfet_03v3.sym} 1200 -90 1 0 {name=M6
+C {symbols/nfet_03v3.sym} 1200 -90 1 0 {name=M6
 L=0.28u
 W=5u
 nf=1
@@ -223,7 +223,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {/foss/pdks/gf180mcuC/libs.tech/xschem/symbols/pfet_03v3.sym} 540 -90 3 1 {name=M7
+C {symbols/pfet_03v3.sym} 540 -90 3 1 {name=M7
 L=0.28u
 W=3u
 nf=1
@@ -261,7 +261,7 @@ C {devices/lab_pin.sym} 1140 -140 0 0 {name=p12 sig_type=std_logic lab=vclose}
 C {devices/lab_pin.sym} 650 -40 0 0 {name=p13 sig_type=std_logic lab=vcp}
 C {devices/lab_pin.sym} 650 70 0 0 {name=p14 sig_type=std_logic lab=vcm}
 C {devices/lab_pin.sym} 510 -70 0 0 {name=p15 sig_type=std_logic lab=v}
-C {/foss/pdks/gf180mcuC/libs.tech/xschem/symbols/pfet_03v3.sym} 260 -270 0 0 {name=M8
+C {symbols/pfet_03v3.sym} 260 -270 0 0 {name=M8
 L=0.28u
 W=1u
 nf=1
@@ -275,7 +275,7 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {/foss/pdks/gf180mcuC/libs.tech/xschem/symbols/nfet_03v3.sym} 260 -110 0 0 {name=M9
+C {symbols/nfet_03v3.sym} 260 -110 0 0 {name=M9
 L=0.28u
 W=.25u
 nf=1
@@ -292,7 +292,7 @@ spiceprefix=X
 C {devices/lab_pin.sym} 280 -300 0 0 {name=p16 sig_type=std_logic lab=v}
 C {devices/lab_pin.sym} 110 -230 0 0 {name=p17 sig_type=std_logic lab=clk}
 C {devices/gnd.sym} 720 40 0 0 {name=l13 lab=GND}
-C {/foss/pdks/gf180mcuC/libs.tech/xschem/symbols/pfet_03v3.sym} 130 -280 0 0 {name=M11
+C {symbols/pfet_03v3.sym} 130 -280 0 0 {name=M11
 L=0.28u
 W=4u
 nf=1
@@ -306,7 +306,7 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {/foss/pdks/gf180mcuC/libs.tech/xschem/symbols/nfet_03v3.sym} 130 -120 0 0 {name=M12
+C {symbols/nfet_03v3.sym} 130 -120 0 0 {name=M12
 L=0.28u
 W=4u
 nf=1
@@ -356,7 +356,7 @@ C {devices/vsource.sym} 710 270 0 0 {name=V3 value=3.3}
 C {devices/lab_pin.sym} 710 240 0 0 {name=p10 sig_type=std_logic lab=v}
 C {devices/gnd.sym} 710 300 0 0 {name=l11 lab=GND}
 C {devices/vsource.sym} 780 270 0 0 {name=V1 value="PULSE(3 0 0 100p 100p 7.81n 187.5n)"}
-C {/foss/pdks/gf180mcuC/libs.tech/xschem/symbols/nfet_03v3.sym} 790 40 0 1 {name=M10
+C {symbols/nfet_03v3.sym} 790 40 0 1 {name=M10
 L=0.28u
 W=.28u
 nf=1
@@ -370,7 +370,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {symbols/Preamp-Strong-Latch.sym} 1350 340 0 0 {name=X1}
+C {../../symbols/Preamp-Strong-Latch.sym} 1350 340 0 0 {name=X1}
 C {devices/lab_pin.sym} 1410 220 0 0 {name=p4 sig_type=std_logic lab=v}
 C {devices/gnd.sym} 1410 360 0 0 {name=l12 lab=GND}
 C {devices/vsource.sym} 1330 360 0 0 {name=V4 value="PULSE(3 0 0 100p 180n 1n 187.5n)"}

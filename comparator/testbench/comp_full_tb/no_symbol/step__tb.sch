@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -157,9 +157,9 @@ C {devices/gnd.sym} 240 -50 0 0 {name=l5 lab=GND}
 C {devices/lab_wire.sym} 240 -120 0 0 {name=p13 sig_type=std_logic lab=V
 }
 C {devices/lab_wire.sym} 10 -50 0 0 {name=p23 sig_type=std_logic lab=Vin2}
-C {symbols/Vdiffmeter.sym} 730 -400 0 0 {name=X2}
-C {symbols/Vdiffmeter.sym} 1000 -400 0 0 {name=X6}
-C {symbols/Vdiffmeter.sym} 210 -300 0 0 {name=X5}
-C {symbols/preamp.sym} 530 -170 0 0 {name=X3}
-C {symbols/SR_nor.sym} 1110 -210 0 0 {name=X1}
-C {symbols/strongarm.sym} 850 -190 0 0 {name=X4}
+C {../../../../symbols/Vdiffmeter.sym} 730 -400 0 0 {name=X2}
+C {../../../../symbols/Vdiffmeter.sym} 1000 -400 0 0 {name=X6}
+C {../../../../symbols/Vdiffmeter.sym} 210 -300 0 0 {name=X5}
+C {../../../../symbols/preamp.sym} 530 -170 0 0 {name=X3}
+C {../../../../symbols/SR_nor.sym} 1110 -210 0 0 {name=X1}
+C {../../../../symbols/strongarm.sym} 850 -190 0 0 {name=X4}

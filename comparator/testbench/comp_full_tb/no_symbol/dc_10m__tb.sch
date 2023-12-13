@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -151,8 +151,8 @@ C {devices/code.sym} -510 -560 0 0 {name=TT_MODELS
 only_toplevel=true 
 format="tcleval(  @value  )"
 value="
-.include /foss/pdks/gf180mcuC/libs.tech/ngspice/design.ngspice
-.lib /foss/pdks/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
+.include $env(PDK_ROOT)/$env(PDK)/libs.tech/ngspice/design.ngspice
+.lib $env(PDK_ROOT)/$env(PDK)/libs.tech/ngspice/sm141064.ngspice typical
 "
 spice_ignore=false}
 C {devices/lab_wire.sym} 630 -650 0 0 {name=p1 sig_type=std_logic lab=Vout1preamp}
@@ -189,13 +189,13 @@ C {devices/lab_wire.sym} 1280 -220 0 0 {name=p24 sig_type=std_logic lab=V
 }
 C {devices/gnd.sym} 1320 -250 0 0 {name=l10 lab=GND}
 C {devices/lab_wire.sym} -380 -90 0 0 {name=p25 sig_type=std_logic lab=Vin2}
-C {symbols/Vdiffmeter.sym} 930 -590 0 0 {name=X6}
-C {symbols/Vdiffmeter.sym} 660 -590 0 0 {name=X2}
-C {symbols/Vdiffmeter.sym} -310 -470 0 0 {name=X5}
-C {symbols/inv.sym} 1320 -290 0 0 {name=x7 cl=0.28u wp=0.44u wn=0.22u}
-C {symbols/inv.sym} 1130 -290 0 0 {name=x8 cl=0.28u wp=0.44u wn=0.22u}
-C {symbols/inv.sym} 1280 -180 0 0 {name=x9 cl=0.28u wp=0.44u wn=0.22u}
-C {symbols/inv.sym} 1120 -180 0 0 {name=x10 cl=0.28u wp=0.44u wn=0.22u}
-C {symbols/preamp.sym} 530 -170 0 0 {name=X3}
-C {symbols/SR_nor.sym} 1540 -200 0 0 {name=X1}
-C {symbols/strongarm.sym} 850 -190 0 0 {name=X4}
+C {../../../../symbols/Vdiffmeter.sym} 930 -590 0 0 {name=X6}
+C {../../../../symbols/Vdiffmeter.sym} 660 -590 0 0 {name=X2}
+C {../../../../symbols/Vdiffmeter.sym} -310 -470 0 0 {name=X5}
+C {../../../../symbols/inv.sym} 1320 -290 0 0 {name=x7 cl=0.28u wp=0.44u wn=0.22u}
+C {../../../../symbols/inv.sym} 1130 -290 0 0 {name=x8 cl=0.28u wp=0.44u wn=0.22u}
+C {../../../../symbols/inv.sym} 1280 -180 0 0 {name=x9 cl=0.28u wp=0.44u wn=0.22u}
+C {../../../../symbols/inv.sym} 1120 -180 0 0 {name=x10 cl=0.28u wp=0.44u wn=0.22u}
+C {../../../../symbols/preamp.sym} 530 -170 0 0 {name=X3}
+C {../../../../symbols/SR_nor.sym} 1540 -200 0 0 {name=X1}
+C {../../../../symbols/strongarm.sym} 850 -190 0 0 {name=X4}

@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -138,11 +138,11 @@ C {devices/lab_wire.sym} 1130 -170 0 0 {name=p25 sig_type=std_logic lab=V
 C {devices/gnd.sym} 1130 -250 0 0 {name=l1 lab=GND}
 C {devices/gnd.sym} 1130 -90 0 0 {name=l11 lab=GND}
 C {devices/lab_wire.sym} 110 -100 0 0 {name=p28 sig_type=std_logic lab=Vin2}
-C {symbols/Vdiffmeter.sym} 1000 -400 0 0 {name=X6}
-C {symbols/Vdiffmeter.sym} 730 -400 0 0 {name=X2}
-C {symbols/inv.sym} 1130 -290 0 0 {name=x7 cl=0.28u wp=0.44u wn=0.22u}
-C {symbols/inv.sym} 1130 -130 0 0 {name=x8 cl=0.28u wp=0.44u wn=0.22u}
-C {symbols/Vdiffmeter.sym} 210 -300 0 0 {name=X5}
-C {symbols/preamp.sym} 530 -170 0 0 {name=X9}
-C {symbols/strongarm.sym} 850 -190 0 0 {name=X3}
-C {symbols/SR_nand.sym} 1270 -210 0 0 {name=X1}
+C {../../../../symbols/Vdiffmeter.sym} 1000 -400 0 0 {name=X6}
+C {../../../../symbols/Vdiffmeter.sym} 730 -400 0 0 {name=X2}
+C {../../../../symbols/inv.sym} 1130 -290 0 0 {name=x7 cl=0.28u wp=0.44u wn=0.22u}
+C {../../../../symbols/inv.sym} 1130 -130 0 0 {name=x8 cl=0.28u wp=0.44u wn=0.22u}
+C {../../../../symbols/Vdiffmeter.sym} 210 -300 0 0 {name=X5}
+C {../../../../symbols/preamp.sym} 530 -170 0 0 {name=X9}
+C {../../../../symbols/strongarm.sym} 850 -190 0 0 {name=X3}
+C {../../../../symbols/SR_nand.sym} 1270 -210 0 0 {name=X1}

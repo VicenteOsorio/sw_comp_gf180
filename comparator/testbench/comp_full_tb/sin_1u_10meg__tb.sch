@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -67,10 +67,10 @@ C {devices/code.sym} 60 -560 0 0 {name=TT_MODELS
 only_toplevel=true 
 format="tcleval(  @value  )"
 value="
-.include /foss/pdks/gf180mcuC/libs.tech/ngspice/design.ngspice
-.lib /foss/pdks/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
+.include $env(PDK_ROOT)/$env(PDK)/libs.tech/ngspice/design.ngspice
+.lib $env(PDK_ROOT)/$env(PDK)/libs.tech/ngspice/sm141064.ngspice typical
 "
 spice_ignore=false}
-C {symbols/Vdiffmeter.sym} 260 -470 0 0 {name=X2}
+C {../../../symbols/Vdiffmeter.sym} 260 -470 0 0 {name=X2}
 C {../../../symbols/Preamp-Strong-Latch.sym} 580 -400 0 0 {name=X1}
-C {symbols/Preamp-Strong-Latch.sym} 920 -530 0 0 {name=X3}
+C {../../../symbols/Preamp-Strong-Latch.sym} 920 -530 0 0 {name=X3}

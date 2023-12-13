@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -64,5 +64,5 @@ m=2}
 C {devices/gnd.sym} 860 -220 0 0 {name=l9 lab=GND}
 C {devices/lab_wire.sym} 730 -280 0 0 {name=p3 sig_type=std_logic lab=Vq
 }
-C {symbols/SR_nand.sym} 550 -210 0 0 {name=X1}
-C {symbols/Vdiffmeter.sym} 760 -220 0 0 {name=X2}
+C {../../../symbols/SR_nand.sym} 550 -210 0 0 {name=X1}
+C {../../../symbols/Vdiffmeter.sym} 760 -220 0 0 {name=X2}

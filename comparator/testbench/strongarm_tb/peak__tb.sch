@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -91,6 +91,7 @@ device=resistor
 m=2}
 C {devices/gnd.sym} 1040 -80 0 0 {name=l9 lab=GND}
 C {devices/lab_wire.sym} 150 -110 0 0 {name=p12 sig_type=std_logic lab=Vin2}
-C {symbols/strongarm.sym} 710 -70 0 0 {name=X1}
-C {symbols/Vdiffmeter.sym} 940 -80 0 0 {name=X3}
-C {symbols/Vdiffmeter.sym} 250 -310 0 0 {name=X2}
+C {../../../symbols/strongarm.sym} 710 -70 0 0 {name=X1}
+C {../../../symbols/Vdiffmeter.sym} 940 -80 0 0 {name=X3}
+C {../../../symbols/Vdiffmeter.sym} 250 -310 0 0 {name=X2}
+C {../../../symbols/inv.sym} 450 -520 0 0 {name=x4 cl=0.28u wp=0.44u wn=0.22u}

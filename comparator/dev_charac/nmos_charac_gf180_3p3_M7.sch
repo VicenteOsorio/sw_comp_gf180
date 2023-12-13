@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -8,19 +8,19 @@ E {}
 N 1090 -360 1140 -360 {
 lab=g1}
 N 1180 -290 1180 -230 {
-lab=#net1}
+lab=GND}
 N 1180 -360 1260 -360 {
-lab=#net1}
+lab=GND}
 N 1260 -360 1260 -290 {
-lab=#net1}
+lab=GND}
 N 1180 -290 1260 -290 {
-lab=#net1}
+lab=GND}
 N 1180 -530 1180 -400 {
 lab=d1}
 N 1180 -530 1330 -530 {
 lab=d1}
 N 1180 -330 1180 -290 {
-lab=#net1}
+lab=GND}
 N 1180 -400 1180 -390 {
 lab=d1}
 C {devices/code_shown.sym} 1390 -570 0 0 {name=NGSPICE
@@ -60,8 +60,8 @@ setscale a
 plot idn/W
 plot vov2
 
-wrdata /foss/designs/personal/sw_comp_gf180/comparator/dev_charac/data/data_idnW_gmnidn_M7.dat idn/W
-wrdata /foss/designs/personal/sw_comp_gf180/comparator/dev_charac/data/data_vov_gmnidn_M7.dat vov2
+*wrdata /foss/designs/personal/sw_comp_gf180/comparator/dev_charac/data/data_idnW_gmnidn_M7.dat idn/W
+*wrdata /foss/designs/personal/sw_comp_gf180/comparator/dev_charac/data/data_vov_gmnidn_M7.dat vov2
 
 
 .endc

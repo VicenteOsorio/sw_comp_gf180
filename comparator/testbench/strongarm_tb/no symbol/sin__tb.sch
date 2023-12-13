@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -62,19 +62,19 @@ lab=Vout2}
 N 1900 -600 1900 -540 {
 lab=#net2}
 N 1840 -660 1910 -660 {
-lab=#net3}
+lab=V}
 N 1610 -430 1610 -420 {
 lab=Vout1}
 N 1610 -600 1610 -550 {
-lab=#net4}
+lab=#net3}
 N 1600 -630 1610 -630 {
-lab=#net3}
+lab=V}
 N 1600 -660 1600 -630 {
-lab=#net3}
+lab=V}
 N 1900 -630 1910 -630 {
-lab=#net3}
+lab=V}
 N 1910 -660 1910 -630 {
-lab=#net3}
+lab=V}
 N 1650 -630 1680 -630 {
 lab=Vout2}
 N 1650 -390 1680 -390 {
@@ -82,17 +82,17 @@ lab=Vout2}
 N 1680 -470 1680 -390 {
 lab=Vout2}
 N 1610 -520 1660 -520 {
-lab=#net3}
+lab=V}
 N 1660 -660 1660 -520 {
-lab=#net3}
+lab=V}
 N 1820 -430 1820 -390 {
 lab=Vout1}
 N 1820 -390 1860 -390 {
 lab=Vout1}
 N 1840 -510 1900 -510 {
-lab=#net3}
+lab=V}
 N 1840 -660 1840 -510 {
-lab=#net3}
+lab=V}
 N 1820 -630 1860 -630 {
 lab=Vout1}
 N 1680 -470 1900 -470 {
@@ -132,9 +132,9 @@ lab=GND}
 N 1900 -310 1920 -310 {
 lab=GND}
 N 1600 -660 1660 -660 {
-lab=#net3}
+lab=V}
 N 1760 -660 1840 -660 {
-lab=#net3}
+lab=V}
 N 1680 -630 1680 -470 {
 lab=Vout2}
 N 1900 -480 1900 -470 {
@@ -146,7 +146,7 @@ lab=Vout1}
 N 1900 -470 1900 -430 {
 lab=Vout2}
 N 1660 -660 1760 -660 {
-lab=#net3}
+lab=V}
 N 1610 -310 1740 -310 {
 lab=GND}
 N 1920 -310 1990 -310 {
@@ -154,15 +154,15 @@ lab=GND}
 N 1370 -260 1670 -260 {
 lab=#net1}
 N 1750 -780 1770 -780 {
-lab=#net3}
+lab=V}
 N 1770 -780 1770 -750 {
-lab=#net3}
+lab=V}
 N 1750 -750 1770 -750 {
-lab=#net3}
+lab=V}
 N 1750 -720 1750 -660 {
-lab=#net3}
+lab=V}
 N 1750 -750 1750 -720 {
-lab=#net3}
+lab=V}
 C {devices/vsource.sym} 230 -140 0 0 {name=V2 value=1.6}
 C {devices/vsource.sym} 300 -140 0 0 {name=V3 value="PULSE(0 3 0 100p 100p 7n 15n)"}
 C {devices/gnd.sym} 1700 -130 0 0 {name=l1 lab=GND}
@@ -218,9 +218,9 @@ device=resistor
 m=2}
 C {devices/gnd.sym} 1040 -80 0 0 {name=l9 lab=GND}
 C {devices/lab_wire.sym} 150 -110 0 0 {name=p12 sig_type=std_logic lab=Vin2}
-C {symbols/Vdiffmeter.sym} 940 -80 0 0 {name=X3}
-C {symbols/Vdiffmeter.sym} 250 -310 0 0 {name=X2}
-C {/foss/pdks/gf180mcuC/libs.tech/xschem/symbols/pfet_03v3.sym} 1630 -630 0 1 {name=M1
+C {../../../../symbols/Vdiffmeter.sym} 940 -80 0 0 {name=X3}
+C {../../../../symbols/Vdiffmeter.sym} 250 -310 0 0 {name=X2}
+C {symbols/pfet_03v3.sym} 1630 -630 0 1 {name=M1
 L=0.28u
 W=2u
 nf=1
@@ -234,7 +234,7 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {/foss/pdks/gf180mcuC/libs.tech/xschem/symbols/nfet_03v3.sym} 1390 -390 0 0 {name=M2
+C {symbols/nfet_03v3.sym} 1390 -390 0 0 {name=M2
 L=0.28u
 W=2u
 nf=1
@@ -248,7 +248,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {/foss/pdks/gf180mcuC/libs.tech/xschem/symbols/nfet_03v3.sym} 1880 -390 0 0 {name=M3
+C {symbols/nfet_03v3.sym} 1880 -390 0 0 {name=M3
 L=0.28u
 W=2u
 nf=1
@@ -262,7 +262,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {/foss/pdks/gf180mcuC/libs.tech/xschem/symbols/nfet_03v3.sym} 2150 -380 0 1 {name=M4
+C {symbols/nfet_03v3.sym} 2150 -380 0 1 {name=M4
 L=0.28u
 W=2u
 nf=1
@@ -276,7 +276,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {/foss/pdks/gf180mcuC/libs.tech/xschem/symbols/nfet_03v3.sym} 1630 -390 0 1 {name=M5
+C {symbols/nfet_03v3.sym} 1630 -390 0 1 {name=M5
 L=0.28u
 W=2u
 nf=1
@@ -290,7 +290,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {/foss/pdks/gf180mcuC/libs.tech/xschem/symbols/pfet_03v3.sym} 1880 -630 0 0 {name=M6
+C {symbols/pfet_03v3.sym} 1880 -630 0 0 {name=M6
 L=0.28u
 W=2u
 nf=1
@@ -304,7 +304,7 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {/foss/pdks/gf180mcuC/libs.tech/xschem/symbols/pfet_03v3.sym} 1590 -520 0 0 {name=M7
+C {symbols/pfet_03v3.sym} 1590 -520 0 0 {name=M7
 L=0.28u
 W=10u
 nf=1
@@ -318,7 +318,7 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {/foss/pdks/gf180mcuC/libs.tech/xschem/symbols/pfet_03v3.sym} 1920 -510 0 1 {name=M8
+C {symbols/pfet_03v3.sym} 1920 -510 0 1 {name=M8
 L=0.28u
 W=10u
 nf=1
@@ -334,7 +334,7 @@ spiceprefix=X
 }
 C {devices/lab_wire.sym} 1410 -430 0 1 {name=p14 lab=Vout1}
 C {devices/lab_wire.sym} 2130 -430 0 0 {name=p18 lab=Vout2}
-C {symbols/inv.sym} 1490 -170 0 0 {name=x4 cl=0.28u wp=0.44u wn=0.22u}
+C {../../../../symbols/inv.sym} 1490 -170 0 0 {name=x4 cl=0.28u wp=0.44u wn=0.22u}
 C {devices/lab_wire.sym} 1570 -520 0 0 {name=p16 sig_type=std_logic lab=Vin1}
 C {devices/lab_wire.sym} 940 -140 0 0 {name=p4 lab=Vout1}
 C {devices/lab_wire.sym} 940 -100 0 0 {name=p17 lab=Vout2}
