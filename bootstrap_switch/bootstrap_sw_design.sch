@@ -265,7 +265,7 @@ C {devices/vsource.sym} 190 -80 0 0 {name=V1 value="PULSE(3 0 0 100p 100p 7.81n 
 C {devices/lab_pin.sym} 190 -120 0 0 {name=p2 sig_type=std_logic lab=clk}
 C {devices/gnd.sym} 190 -40 0 0 {name=l2 lab=GND}
 C {devices/lab_pin.sym} 70 -430 0 0 {name=p6 sig_type=std_logic lab=clk}
-C {devices/vsource.sym} 410 -80 0 0 {name=V2 value="sin(1.8 1.4 2Meg)"}
+C {devices/vsource.sym} 410 -80 0 0 {name=V2 value="AC 1 sin(1.8 1.4 2Meg)"}
 C {devices/lab_pin.sym} 600 -280 0 0 {name=p8 sig_type=std_logic lab=vin}
 C {devices/gnd.sym} 410 -40 0 0 {name=l9 lab=GND}
 C {devices/lab_pin.sym} 830 -280 2 0 {name=p9 sig_type=std_logic lab=vout}
@@ -350,39 +350,47 @@ C {devices/lab_pin.sym} 270 -420 0 0 {name=p16 sig_type=std_logic lab=negclk}
 C {devices/code_shown.sym} 1170 -780 0 0 {name=SPICE only_toplevel=false value="
 .param CB=1p
 .param wmos35=3u
-.param wmos26=1.5u
-.param wmos1=2u
+.param wmos26=0.28u
+.param wmos1=15u
 .control
 
 
 ***** for W_MOS M2-M6 *****
 
-*compose wid values 0.5u 1.5u 15u 30u  
+*compose wid values 0.28u 1.5u 5u 15u  
 *foreach widmos $&wid
 *alterparam wmos26=$widmos 
 
 ***** for W_MOS M3-M5 *****
 
-*compose wid values 1u 3u 10u 30u  
+*compose wid values 3u 5u 10u 20u  
 *foreach widmos $&wid
 *alterparam wmos35=$widmos 
 
 ***** for W_MOS M1 *****
 
-compose wid values 1u 2u 10u 30u  
-foreach widmos $&wid
-alterparam wmos1=$widmos 
+*compose wid values 8u 10u 15u 20u  
+*foreach widmos $&wid
+*alterparam wmos1=$widmos 
 
-reset
+*reset
+
 save all
-tran 50p 5u 3u  
-*wrdata /foss/designs/sw_comp_gf180/bootstrap_switch/data/data_vout_m1.dat vin vout
-set appendwrite
-end
+tran 50p 5u 3u
+*wrdata /foss/designs/sw_comp_gf180/bootstrap_switch/data/data_vout_m26.dat vin vout
+*set appendwrite
+*end
 
 plot vclose
 plot vin vout
 plot vgate vin
+
+***** For AC analysis *****
+
+*ac dec 200 10 1000Meg
+*settype decibel vout
+*plot vdb(vout)  
+*op
 .endc"
 }
 C {symbols/nfet_03v3.sym} 340 -780 0 0 {name=Ma1

@@ -13,9 +13,9 @@ file_path = 'data_vout_m1.dat' # M1
 
 data = pd.read_csv(file_path, header=None, delim_whitespace=True,names=['t1','s1','t2','s2'])  #space-separated values
 w = [1, 2, 3, 4]
-widths = ['$1 \mu m$','$2 \mu m$', '$10 \mu m$', '$30 \mu m$'] # M1 widths
-#widths = ['$0.5 \mu m$','$1.5 \mu m$', '$15 \mu m$', '$30 \mu m$'] # M26 widths
-#widths = ['$1 \mu m$','$3 \mu m$', '$10 \mu m$', '$30 \mu m$'] # M35 widths
+widths = ['$8 \mu m$','$10 \mu m$', '$15 \mu m$', '$20 \mu m$'] # M1 widths
+#widths = ['$0.28 \mu m$','$1.5 \mu m$', '$5 \mu m$', '$15 \mu m$'] # M26 widths
+#widths = ['$3 \mu m$','$5 \mu m$', '$10 \mu m$', '$20 \mu m$'] # M35 widths
 indices = []
 
 for i, number in enumerate(data['t1']):
