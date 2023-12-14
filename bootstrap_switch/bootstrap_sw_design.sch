@@ -357,28 +357,28 @@ C {devices/code_shown.sym} 1170 -780 0 0 {name=SPICE only_toplevel=false value="
 
 ***** for W_MOS M2-M6 *****
 
-*compose wid values 1u 5u 10u 20u  
+*compose wid values 0.5u 1.5u 15u 30u  
 *foreach widmos $&wid
 *alterparam wmos26=$widmos 
 
 ***** for W_MOS M3-M5 *****
 
-*compose wid values 1u 5u 10u 20u  
+*compose wid values 1u 3u 10u 30u  
 *foreach widmos $&wid
 *alterparam wmos35=$widmos 
 
 ***** for W_MOS M1 *****
 
-*compose wid values 1u 5u 10u 20u  
-*foreach widmos $&wid
-*alterparam wmos1=$widmos 
+compose wid values 1u 2u 10u 30u  
+foreach widmos $&wid
+alterparam wmos1=$widmos 
 
-*reset
+reset
 save all
 tran 50p 5u 3u  
-*wrdata vout_traces_mos.dat vout
-*set appendwrite
-*end
+*wrdata /foss/designs/sw_comp_gf180/bootstrap_switch/data/data_vout_m1.dat vin vout
+set appendwrite
+end
 
 plot vclose
 plot vin vout
