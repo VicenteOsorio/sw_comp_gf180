@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -23,7 +23,7 @@ C {devices/ipin.sym} 0 -40 0 0 {name=p1 lab=gnd}
 C {devices/ipin.sym} 120 -40 2 0 {name=p2 lab=vdd}
 C {devices/ipin.sym} 60 0 3 0 {name=p3 lab=vin}
 C {devices/opin.sym} 60 -40 3 0 {name=p4 lab=vout}
-C {/foss/pdks/gf180mcuC/libs.tech/xschem/symbols/nfet_03v3.sym} 30 -20 3 0 {name=M1
+C {symbols/nfet_03v3.sym} 30 -20 3 0 {name=M1
 L=0.28u
 W=.22u
 nf=1
@@ -37,7 +37,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {/foss/pdks/gf180mcuC/libs.tech/xschem/symbols/pfet_03v3.sym} 90 -20 3 0 {name=M2
+C {symbols/pfet_03v3.sym} 90 -20 3 0 {name=M2
 L=0.28u
 W=.22u
 nf=1

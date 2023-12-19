@@ -167,7 +167,7 @@ N 750 -480 770 -480 {
 lab=V}
 N 770 -440 770 -410 {
 lab=V}
-C {/foss/pdks/gf180mcuC/libs.tech/xschem/symbols/pfet_03v3.sym} 650 -320 0 1 {name=M1
+C {symbols/pfet_03v3.sym} 650 -320 0 1 {name=M1
 L=0.28u
 W=2u
 nf=1
@@ -181,7 +181,7 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {/foss/pdks/gf180mcuC/libs.tech/xschem/symbols/nfet_03v3.sym} 410 -80 0 0 {name=M2
+C {symbols/nfet_03v3.sym} 410 -80 0 0 {name=M2
 L=0.28u
 W=2u
 nf=1
@@ -195,7 +195,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {/foss/pdks/gf180mcuC/libs.tech/xschem/symbols/nfet_03v3.sym} 900 -80 0 0 {name=M3
+C {symbols/nfet_03v3.sym} 900 -80 0 0 {name=M3
 L=0.28u
 W=2u
 nf=1
@@ -209,7 +209,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {/foss/pdks/gf180mcuC/libs.tech/xschem/symbols/nfet_03v3.sym} 1170 -70 0 1 {name=M4
+C {symbols/nfet_03v3.sym} 1170 -70 0 1 {name=M4
 L=0.28u
 W=2u
 nf=1
@@ -223,7 +223,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {/foss/pdks/gf180mcuC/libs.tech/xschem/symbols/nfet_03v3.sym} 650 -80 0 1 {name=M5
+C {symbols/nfet_03v3.sym} 650 -80 0 1 {name=M5
 L=0.28u
 W=2u
 nf=1
@@ -237,7 +237,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {/foss/pdks/gf180mcuC/libs.tech/xschem/symbols/pfet_03v3.sym} 900 -320 0 0 {name=M6
+C {symbols/pfet_03v3.sym} 900 -320 0 0 {name=M6
 L=0.28u
 W=2u
 nf=1
@@ -251,7 +251,7 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {/foss/pdks/gf180mcuC/libs.tech/xschem/symbols/pfet_03v3.sym} 610 -210 0 0 {name=M7
+C {symbols/pfet_03v3.sym} 610 -210 0 0 {name=M7
 L=0.28u
 W=10u
 nf=1
@@ -265,7 +265,7 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {/foss/pdks/gf180mcuC/libs.tech/xschem/symbols/pfet_03v3.sym} 940 -200 0 1 {name=M8
+C {symbols/pfet_03v3.sym} 940 -200 0 1 {name=M8
 L=0.28u
 W=10u
 nf=1
